@@ -3,7 +3,7 @@
  * @author Lester
  * @date 2021-05-08 10:23
  */
-import FastClick from 'fastclick';
+import FastClick from 'fastclick'
 
 /**
  * 计算根元素font size
