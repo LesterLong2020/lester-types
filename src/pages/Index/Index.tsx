@@ -14,7 +14,6 @@ const Index: React.FC<RouteComponentProps> = ({ history }) => {
   useEffect(() => {
     console.log({a: 1,
       b: 2,
-        c: 3
     });
   }, []);
 
