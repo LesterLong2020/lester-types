@@ -6,12 +6,11 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack/dev.js --progress",
     "build": "cross-env NODE_ENV=production webpack --config webpack/build.js --progress",
-    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx src/",
-    "lint-staged": "lint-staged"
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx src/"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint-staged"
+      "pre-commit": "lint-staged"
     }
   },
   "lint-staged": {
@@ -19,7 +18,7 @@
       "prettier --write",
       "git add"
     ],
-    "**/*.{js.jsx,ts,tsx}": "npm run lint"
+    "**/*.{js.jsx,ts,tsx": "npm run lint"
   },
   "author": "lester",
   "license": "ISC",
@@ -61,7 +60,7 @@
     "file-loader": "^6.2.0",
     "happypack": "^5.0.1",
     "html-webpack-plugin": "^5.3.1",
-    "husky": "^6.0.0",
+    "husky": "4.3.8",
     "less": "^4.1.1",
     "less-loader": "5.0.0",
     "lint-staged": "^11.0.0",

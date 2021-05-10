@@ -10,16 +10,14 @@ import { Loading } from 'src/components';
 import routes from '../pages/routes';
 
 const Routes = withRouter(() => (
-    <Suspense fallback={<Loading />}>
-        <Switch>
-            {
-                routes.map((item: RouteProps) => (
-                    <Route key={`rt${item.path}`} {...item} exact/>
-                ))
-            }
-            <Redirect from="/*" to="/index"/>
-        </Switch>
-    </Suspense>
+  <Suspense fallback={<Loading />}>
+    <Switch>
+      {routes.map((item: RouteProps) => (
+        <Route key={`rt${item.path}`} {...item} exact />
+      ))}
+      <Redirect from="/*" to="/index" />
+    </Switch>
+  </Suspense>
 ));
 
 const Layout: React.FC = () => {
@@ -28,9 +26,9 @@ const Layout: React.FC = () => {
   }, []);
 
   return (
-        <Router basename="/tenacity_webapp">
-            <Routes />
-        </Router>
+    <Router basename="/tenacity_webapp">
+      <Routes />
+    </Router>
   );
 };
 
