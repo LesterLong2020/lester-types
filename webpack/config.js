@@ -111,7 +111,7 @@ module.exports = function () {
         use: [{
           loader: 'eslint-loader',
           options: {
-            fix: false
+            fix: true
           }
         }]
       }, {
