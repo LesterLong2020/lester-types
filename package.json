@@ -18,7 +18,7 @@
       "prettier --write",
       "git add"
     ],
-    "**/*.{js.jsx,ts,tsx": "npm run lint"
+    "**/*.{js.jsx,ts,tsx}": "npm run lint"
   },
   "author": "lester",
   "license": "ISC",

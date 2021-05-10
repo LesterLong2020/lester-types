@@ -4,7 +4,7 @@
  * @date 2021-05-07 09:26
  */
 
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect } from 'react';
 import { RouteComponentProps } from 'react-router-dom';
 import { Button } from 'antd-mobile';
 import { Icon } from 'src/components';
@@ -12,7 +12,10 @@ import style from './style.module.less';
 
 const Index: React.FC<RouteComponentProps> = ({ history }) => {
   useEffect(() => {
-    console.log({ a: 1, b: 2 });
+    console.log({
+      a: 1,
+      b: 2
+    });
   }, []);
 
   return (
