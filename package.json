@@ -11,15 +11,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "npm run lint-staged"
     }
   },
   "lint-staged": {
     "**/*.{js.jsx,ts,tsx,json,html,less,css,md}": [
       "prettier --write",
       "git add"
-    ],
-    "**/*.{js.jsx,ts,tsx}": "npm run lint"
+    ]
   },
   "author": "lester",
   "license": "ISC",
