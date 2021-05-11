@@ -1,14 +1,13 @@
 /**
- * @name config
+ * @name webpack.config
  * @author Lester
- * @date 2021-05-06 14:55
+ * @date 2021-05-11 10:39
  */
 
 const path = require('path');
 const os = require('os');
 const HtmlPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-
 const HappyPack = require('happypack');
 
 // 获取系统CPU最大核数 以开启多线程满负荷打包

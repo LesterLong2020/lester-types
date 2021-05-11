@@ -28,10 +28,10 @@ const Index: React.FC<RouteComponentProps> = ({ history }) => {
 
   return (
     <div className={style.wrap}>
-      首页2 {userInfo.name}
+      首页123 {userInfo.name}
       <Icon className={style.icon} name="jiazai" />
       <Button type="primary" onClick={() => history.push('/userCenter')}>
-        前往
+        前往 用户中心
       </Button>
       <img className={style.img} src={require('src/assets/images/bg.jpg')} alt="" />
     </div>
