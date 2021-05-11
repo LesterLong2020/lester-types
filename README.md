@@ -16,4 +16,7 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-## More
+### 代码规范
+
+eslint + prettier<br />
+[前端通用代码规范](https://github.com/BingKui/javascript-zh)
