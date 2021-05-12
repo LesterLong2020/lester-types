@@ -6,3 +6,4 @@
 
 export { default as Icon } from './SvgIcon/SvgIcon';
 export { default as Loading } from './Loading/Loading';
+export { default as CarouselText } from './CarouselText/CarouselText';
