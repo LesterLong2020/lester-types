@@ -48,4 +48,14 @@ import FastClick from 'fastclick';
     };
     doc.body.appendChild(erudaScript);
   };
+
+  // 错误监控
+  /* win.onerror = (msg, url, row, col, error) => {
+    console.log(msg);
+    console.log(url);
+    console.log(row);
+    console.log(col);
+    console.log(error);
+    return false;
+  }; */
 })(document, window);

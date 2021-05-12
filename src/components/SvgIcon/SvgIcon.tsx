@@ -8,15 +8,16 @@ import React from 'react';
 import classNames from 'classnames';
 
 interface IndexProps {
-    className?: string;
-    name: string;
+  className?: string;
+  name: string;
+  onClick?: React.MouseEventHandler;
 }
 
-const SvgIcon: React.FC<IndexProps> = ({ className, name }) => {
+const SvgIcon: React.FC<IndexProps> = ({ className, name, onClick }) => {
   return (
-        <svg className={classNames('icon', className)} aria-hidden="true">
-            <use xlinkHref={`#${name}`} />
-        </svg>
+    <svg className={classNames('icon', className)} aria-hidden="true" onClick={(event) => onClick && onClick(event)}>
+      <use xlinkHref={`#${name}`} />
+    </svg>
   );
 };
 

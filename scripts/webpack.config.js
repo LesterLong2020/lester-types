@@ -81,7 +81,7 @@ module.exports = function () {
       path: path.resolve(ROOT_PATH, './dist'),
       filename: 'js/[name].[chunkhash:8].bundle.js',
       publicPath: isDev ? '/' : '/tenacity_webapp/'
-      // publicPath: isDev ? '/' : './',
+      // publicPath: isDev ? '/' : './'
     },
     mode: NODE_ENV || 'production',
     module: {
